@@ -4,9 +4,9 @@
 ## What I do
 Basic examples
 - Splash screen
-  ![splash_screen_1](https://github.com/sevgitr/flutter_example/assets/49620686/a3ba8a84-7859-4423-96cd-481ea96f84f9)
-  ![Screenshot_2023 07 21_15 00 20 641](https://github.com/sevgitr/flutter_example/assets/49620686/23eef2f4-acbc-48b6-8ab7-ea19c83e993e)
-  ![Screenshot_2023 07 21_15 11 20 096](https://github.com/sevgitr/flutter_example/assets/49620686/cbcd93f2-4578-4484-88df-b66e07510865)
+- ![splash_screen_1](https://github.com/sevgitr/flutter_example/assets/49620686/cbe913e2-dcb1-492b-97b5-2c822cf83cdd)![splash_screen_2](https://github.com/sevgitr/flutter_example/assets/49620686/d540dd98-3604-4a60-bafd-3bd8a3cf15ac)
+
+
 
 
 
