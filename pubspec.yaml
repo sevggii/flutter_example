@@ -40,6 +40,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  get: ^4.1.4
+  http: ^1.1.0
+  uuid: ^3.0.4
 
 flutter_native_splash:
 #flutter clean
