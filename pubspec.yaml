@@ -39,7 +39,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^2.0.1+1
 
+flutter_native_splash:
+
+#flutter clean
+#flutter pub get
+#flutter pub run flutter_native_splash:create
+  color: "#ffffff" #white
+  image: assests/splash.png
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
