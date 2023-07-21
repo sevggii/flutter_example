@@ -1,12 +1,15 @@
 # flutter_application_5
+- Flutter examples 
 
-A new Flutter project.
+## What I do
+Basic examples
+- Splash screen
+  ![splash_screen_1](https://github.com/sevgitr/flutter_example/assets/49620686/cbe913e2-dcb1-492b-97b5-2c822cf83cdd) ![splash_screen_2](https://github.com/sevgitr/flutter_example/assets/49620686/d540dd98-3604-4a60-bafd-3bd8a3cf15ac)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+
+
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
