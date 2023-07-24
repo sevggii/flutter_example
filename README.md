@@ -4,6 +4,7 @@
 ## What I do
 Basic examples
 - Splash screen
+  
   ![splash_screen_1](https://github.com/sevgitr/flutter_example/assets/49620686/cbe913e2-dcb1-492b-97b5-2c822cf83cdd) ![splash_screen_2](https://github.com/sevgitr/flutter_example/assets/49620686/d540dd98-3604-4a60-bafd-3bd8a3cf15ac)
 
 
