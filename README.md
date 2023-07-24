@@ -6,6 +6,9 @@ Basic examples
 - Splash screen
   
   ![splash_screen_1](https://github.com/sevgitr/flutter_example/assets/49620686/cbe913e2-dcb1-492b-97b5-2c822cf83cdd) ![splash_screen_2](https://github.com/sevgitr/flutter_example/assets/49620686/d540dd98-3604-4a60-bafd-3bd8a3cf15ac)
+- Animated Bottım Navigator Bar
+  ![animated_bottom_navigator](https://github.com/sevgitr/flutter_example/assets/49620686/049d18c4-4e39-4ed6-b08a-280793a0d596)
+
 
 
 
