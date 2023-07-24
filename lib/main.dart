@@ -38,21 +38,26 @@ class _MyHomePageState extends State<MyHomePage> {
      ScreenThree(),
    ];
 
+   int _page = 0;
+  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+
    @override 
    Widget build(BuildContext context) { 
      return Scaffold(
   bottomNavigationBar: CurvedNavigationBar(
-    backgroundColor: Colors.blueAccent,
+    key: _bottomNavigationKey,
+    color: Color.fromARGB(255, 241, 34, 19),
+    backgroundColor: Colors.white,
     items: <Widget>[
-      Icon(Icons.add, size: 30),
-      Icon(Icons.list, size: 30),
-      Icon(Icons.compare_arrows, size: 30),
+      Icon(Icons.add, size: 30, color: Colors.white,),
+      Icon(Icons.list, size: 30, color: Colors.white,),
+      Icon(Icons.sunny, size: 30, color: Colors.white),
     ],
     onTap: (index) {
       //Handle button tap
     },
   ),
-  body: Container(color: Colors.blueAccent),
+  body: Container(color: Colors.white),
 );
     }     
  }
