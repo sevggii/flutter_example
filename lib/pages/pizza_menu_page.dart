@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_5/controllers/pizza_controller.dart';
 import 'package:get/get.dart';
-import '../models/pizza_model.dart';
 
 class PizzaMenuPage extends StatefulWidget {
   const PizzaMenuPage({Key? key}) : super(key: key);
@@ -29,19 +28,19 @@ class _PizzaMenuPageState extends State<PizzaMenuPage> {
      body:
        ListView.builder(
          itemCount:
-           pizzas.length,
+          _pizzaController.pizzas.length,
          itemBuilder:
            (ctx, index) {
-             final pizza = pizzas[index];
+             final pizza = _pizzaController.pizzas[index];
              return GestureDetector(
                onTap :
                  () {},
                child :
                  Card(child :
                    Column(children:[
-                     Image.network(pizza.img),
+                     Image.network(pizza.img.toString()),
                      SizedBox(height :10),
-                     Text(pizza.name),
+                     Text(pizza.name.toString()),
                      SizedBox(height :5),
                      Text(pizza.price.toString())
                    ])
