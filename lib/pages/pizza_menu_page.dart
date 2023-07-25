@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../controllers/models/pizza_model.dart';
+import '../models/pizza_model.dart';
 
 class PizzaMenuPage extends StatelessWidget {
   const PizzaMenuPage({Key? key}) : super(key: key);
