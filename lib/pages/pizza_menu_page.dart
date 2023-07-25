@@ -42,7 +42,7 @@ class _PizzaMenuPageState extends State<PizzaMenuPage> {
                      SizedBox(height :10),
                      Text(pizza.name.toString()),
                      SizedBox(height :5),
-                     Text(pizza.price.toString())
+                     Text(pizza.price.toString()),
                    ])
                 )
               );
