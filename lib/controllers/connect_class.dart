@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-void main() async {
+void connect() async {
   var client = http.Client();
   var request = http.Request(
     'GET',

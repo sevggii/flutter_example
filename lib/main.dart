@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
-import 'pages/pizza_menu_page.dart';
+//import 'pages/screen_one.dart';
 import 'pages/screen_three.dart';
 import 'pages/screen_two.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,41 +30,31 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
- int currentIndex = 0;
+  int currentIndex = 0;
 
- final List<Widget> pages = [
-   PizzaMenuPage(),
-   ScreenTwo(),
-   ScreenThree(),
- ];
+   final List<Widget> pages = [
+     //ScreenOne(),
+     ScreenTwo(),
+     ScreenThree(),
+   ];
 
- GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
-
- void onTap(int index) {
-   setState(() {
-     currentIndex = index;
-   });
+   @override 
+   Widget build(BuildContext context) { 
+     return Scaffold(
+  bottomNavigationBar: CurvedNavigationBar(
+    color: Colors.red,
+    backgroundColor: Colors.white,
+    height: 50,
+    items: <Widget>[
+      Icon(Icons.add, size: 30, color: Colors.white,),
+      Icon(Icons.list, size: 30, color: Colors.white,),
+      Icon(Icons.compare_arrows, size: 30, color: Colors.white,),
+    ],
+    onTap: (index) {
+      //Handle button tap
+    },
+  ),
+  body: Container(color: Colors.white),
+);
+    }     
  }
-
- @override 
- Widget build(BuildContext context) { 
-   return Scaffold(
-     bottomNavigationBar: CurvedNavigationBar(
-       key: _bottomNavigationKey,
-       color: Color.fromARGB(255, 241, 34, 19),
-       backgroundColor :Colors.white,
-       buttonBackgroundColor :Color.fromARGB(255,241 ,34 ,19),
-       items:<Widget>[
-         Icon(Icons.add, size :30 ,color :Colors.white,),
-         Icon(Icons.list,size :30 ,color :Colors.white,),
-         Icon(Icons.sunny,size :30,color :Colors.white,)
-       ],
-       
-       onTap:onTap ,
-     ),
-     
-     body:
-        pages[currentIndex],
-    );     
- }   
-}
