@@ -1,6 +1,9 @@
 import 'package:http/http.dart' as http;
+import 'package:get/get.dart';
 
-void connect() async {
+class PizzaController extends GetxController{
+
+void fetchPizzas() async {
   var client = http.Client();
   var request = http.Request(
     'GET',
@@ -21,4 +24,5 @@ void connect() async {
    }
 
    client.close();
+}
 }
