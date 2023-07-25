@@ -1,54 +1,115 @@
 class Pizza {
-    int id;
-    String name;
-    bool veg;
-    int price;
-    String description;
-    int quantity;
-    String img;
-    List<Sizeandcrust> sizeandcrust;
+  final int? id;
+  final String? name;
+  final bool? veg;
+  final int? price;
+  final String? description;
+  final int? quantity;
+  final String? img;
+  final List<Sizeandcrust>? sizeandcrust;
 
-    Pizza({
-        required this.id,
-        required this.name,
-        required this.veg,
-        required this.price,
-        required this.description,
-        required this.quantity,
-        required this.img,
-        required this.sizeandcrust,
-    });
+  Pizza({
+    this.id,
+    this.name,
+    this.veg,
+    this.price,
+    this.description,
+    this.quantity,
+    this.img,
+    this.sizeandcrust,
+  });
 
+  Pizza.fromJson(Map<String, dynamic> json)
+    : id = json['id'] as int?,
+      name = json['name'] as String?,
+      veg = json['veg'] as bool?,
+      price = json['price'] as int?,
+      description = json['description'] as String?,
+      quantity = json['quantity'] as int?,
+      img = json['img'] as String?,
+      sizeandcrust = (json['sizeandcrust'] as List?)?.map((dynamic e) => Sizeandcrust.fromJson(e as Map<String,dynamic>)).toList();
+
+  Map<String, dynamic> toJson() => {
+    'id' : id,
+    'name' : name,
+    'veg' : veg,
+    'price' : price,
+    'description' : description,
+    'quantity' : quantity,
+    'img' : img,
+    'sizeandcrust' : sizeandcrust?.map((e) => e.toJson()).toList()
+  };
 }
 
 class Sizeandcrust {
-    List<Medium> mediumPan;
-    List<Medium> mediumstuffedcrustcheesemax;
-    List<Medium>? mediumstuffedcrustvegkebab;
-    List<Medium>? mediumStuffedCrustVegKebab;
-    List<Medium>? mediumstuffedcrustchickenseekhkebab;
-    List<Medium>? mediumStuffedCrustKebab;
+  final List<MediumPan>? mediumPan;
+  final List<Mediumstuffedcrustcheesemax>? mediumstuffedcrustcheesemax;
+  final List<Mediumstuffedcrustvegkebab>? mediumstuffedcrustvegkebab;
 
-    Sizeandcrust({
-        required this.mediumPan,
-        required this.mediumstuffedcrustcheesemax,
-        this.mediumstuffedcrustvegkebab,
-        this.mediumStuffedCrustVegKebab,
-        this.mediumstuffedcrustchickenseekhkebab,
-        this.mediumStuffedCrustKebab,
-    });
+  Sizeandcrust({
+    this.mediumPan,
+    this.mediumstuffedcrustcheesemax,
+    this.mediumstuffedcrustvegkebab,
+  });
 
+  Sizeandcrust.fromJson(Map<String, dynamic> json)
+    : mediumPan = (json['mediumPan'] as List?)?.map((dynamic e) => MediumPan.fromJson(e as Map<String,dynamic>)).toList(),
+      mediumstuffedcrustcheesemax = (json['mediumstuffedcrustcheesemax'] as List?)?.map((dynamic e) => Mediumstuffedcrustcheesemax.fromJson(e as Map<String,dynamic>)).toList(),
+      mediumstuffedcrustvegkebab = (json['mediumstuffedcrustvegkebab'] as List?)?.map((dynamic e) => Mediumstuffedcrustvegkebab.fromJson(e as Map<String,dynamic>)).toList();
+
+  Map<String, dynamic> toJson() => {
+    'mediumPan' : mediumPan?.map((e) => e.toJson()).toList(),
+    'mediumstuffedcrustcheesemax' : mediumstuffedcrustcheesemax?.map((e) => e.toJson()).toList(),
+    'mediumstuffedcrustvegkebab' : mediumstuffedcrustvegkebab?.map((e) => e.toJson()).toList()
+  };
 }
 
-class Medium {
-    int price;
+class MediumPan {
+  final int? price;
 
-    Medium({
-        required this.price,
-    });
+  MediumPan({
+    this.price,
+  });
+
+  MediumPan.fromJson(Map<String, dynamic> json)
+    : price = json['price'] as int?;
+
+  Map<String, dynamic> toJson() => {
+    'price' : price
+  };
 }
 
-List<Pizza> pizzas = [];
+class Mediumstuffedcrustcheesemax {
+  final int? price;
+
+  Mediumstuffedcrustcheesemax({
+    this.price,
+  });
+
+  Mediumstuffedcrustcheesemax.fromJson(Map<String, dynamic> json)
+    : price = json['price'] as int?;
+
+  Map<String, dynamic> toJson() => {
+    'price' : price
+  };
+}
+
+class Mediumstuffedcrustvegkebab {
+  final int? price;
+
+  Mediumstuffedcrustvegkebab({
+    this.price,
+  });
+
+  Mediumstuffedcrustvegkebab.fromJson(Map<String, dynamic> json)
+    : price = json['price'] as int?;
+
+  Map<String, dynamic> toJson() => {
+    'price' : price
+  };
+}
+
+//List<Pizza> pizzas = [];
 
 
 /*class Pizza {
