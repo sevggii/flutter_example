@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_5/pages/pizza_menu_page.dart';
 
-//import 'pages/screen_one.dart';
+import 'pages/pizza_menu_page.dart';
 import 'pages/screen_three.dart';
 import 'pages/screen_two.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -10,13 +11,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
     );
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int currentIndex = 0;
 
    final List<Widget> pages = [
-     //ScreenOne(),
+     PizzaMenuPage(),
      ScreenTwo(),
      ScreenThree(),
    ];
@@ -41,20 +41,23 @@ class _MyHomePageState extends State<MyHomePage> {
    @override 
    Widget build(BuildContext context) { 
      return Scaffold(
-  bottomNavigationBar: CurvedNavigationBar(
-    color: Colors.red,
-    backgroundColor: Colors.white,
-    height: 50,
-    items: <Widget>[
-      Icon(Icons.add, size: 30, color: Colors.white,),
-      Icon(Icons.list, size: 30, color: Colors.white,),
-      Icon(Icons.compare_arrows, size: 30, color: Colors.white,),
-    ],
-    onTap: (index) {
-      //Handle button tap
-    },
-  ),
-  body: Container(color: Colors.white),
-);
-    }     
- }
+       bottomNavigationBar: CurvedNavigationBar(
+        color: Colors.red,
+        height: 60,
+         backgroundColor: Colors.transparent,
+         items: <Widget>[
+           Icon(Icons.add, size: 30, color: Colors.white,),
+           Icon(Icons.list, size: 30, color: Colors.white,),
+           Icon(Icons.compare_arrows, size: 30, color: Colors.white,),
+         ],
+         onTap:
+             (index) { setState(() { currentIndex = index; }); },
+       ),
+       body:
+           IndexedStack(index :currentIndex , children : pages)
+      
+        
+       
+     );
+}
+}
