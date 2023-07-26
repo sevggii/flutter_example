@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  int currentIndex = 0;
+  int currentIndex = 0;//
 
    final List<Widget> pages = [
      PizzaMenuPage(),
