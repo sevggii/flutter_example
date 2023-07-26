@@ -56,7 +56,7 @@ flutter_native_splash:
 #flutter pub get
 #flutter pub run flutter_native_splash:create
   color: "#ffffff" #white
-  image: assests/splash.png
+  image: assests/pizza_splash_2.jpg
   fullscreen: true
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
