@@ -14,7 +14,7 @@ class PizzaController extends GetxController {
     request.headers.addAll({
       "X-RapidAPI-Key": "d3875fdd0emshc5ad7f5a5426f1ap18e44djsn795b094265e8",
       "X-RapidAPI-Host": "pizza-and-desserts.p.rapidapi.com"
-    });//
+    });
 
     var response = await client.send(request);
     
