@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_5/controllers/pizza_controller.dart';
+import '../controllers/pizza_controller.dart';
 import 'package:get/get.dart';
 
 class PizzaMenuPage extends StatefulWidget {

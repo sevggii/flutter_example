@@ -1,5 +1,5 @@
-name: flutter_application_5
-description: A new Flutter project.
+name: PizzApp
+description: Pizza app.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -55,9 +55,9 @@ flutter_native_splash:
 #flutter clean
 #flutter pub get
 #flutter pub run flutter_native_splash:create
-  color: "#ffffff" #white
+  #color: "#ffffff" #white
   image: assests/pizza_splash_2.jpg
-  fullscreen: true
+  #fullscreen: false
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
