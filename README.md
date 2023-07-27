@@ -1,5 +1,6 @@
 - Splash Screen  / Animated Bottom Navigator Bar
-- ![splash_screen](https://github.com/sevgitr/flutter_example/assets/49620686/aafa5038-213a-4888-a250-a9d4460424d6) ![nav_menu](https://github.com/sevgitr/flutter_example/assets/49620686/143106e3-97db-4634-b06e-40762d71af71)
+- ![pizza_splash_2_](https://github.com/sevgitr/flutter_example/assets/49620686/aa2cf722-9419-4f00-a704-2dc76619781d)
+ ![nav_menu](https://github.com/sevgitr/flutter_example/assets/49620686/143106e3-97db-4634-b06e-40762d71af71)
 
 
 
