@@ -5,7 +5,7 @@ import 'pages/screen_two.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp());//
 }
 
 class MyApp extends StatelessWidget {
