@@ -55,7 +55,7 @@ flutter_native_splash:
 #flutter clean
 #flutter pub get
 #flutter pub run flutter_native_splash:create
-  #color: "#ffffff" #white
+  color: "#000000" #black
   image: assests/pizza_splash_2.jpg
   fullscreen: false
   # The "flutter_lints" package below contains a set of recommended lints to
